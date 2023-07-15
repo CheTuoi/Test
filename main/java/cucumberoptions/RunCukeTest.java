@@ -36,7 +36,7 @@ public class RunCukeTest {
         return testNGCucumberRunner.provideScenarios();
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = false)
     public void tearDownClass(){
         AssertHelper.assertAlljkkjfjkfkkdfjjf();
         testNGCucumberRunner.finish122333434();
