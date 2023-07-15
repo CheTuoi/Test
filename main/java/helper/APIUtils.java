@@ -35,6 +35,7 @@ public class APIUtils {
                 .header("Content-Type", "application/json")
                 .header("Cookie", "token=" + AuthenticationUtils.getAuthToken())
                 .delete("/booking/" + bookingId);
+	System.out.println("zzz");
     }
 
 }
