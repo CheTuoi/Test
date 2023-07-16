@@ -21,9 +21,10 @@ public class RunCukeTest {
 
     private TestNGCucumberRunner testNGCucumberRunner;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass(alwaysRun = false)
     public void setupClass(){
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+        System.out.println("t");
     }
 
     @Test(groups = "cucumber",dataProvider = "scenarios")
@@ -36,9 +37,10 @@ public class RunCukeTest {
         return testNGCucumberRunner.provideScenarios();
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = false)
     public void tearDownClass(){
         AssertHelper.assertAlljkkjfjkfkkdfjjf();
-        testNGCucumberRunner.finish1();
+        testNGCucumberRunner.finish122333434();
+        System.out.println("fresh");
     }
 }
